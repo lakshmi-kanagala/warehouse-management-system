@@ -1,0 +1,50 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 57,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "96ctrhlt95",
+  "leftColumn": 24,
+  "minWidth": 120,
+  "mobileBottomRow": 57,
+  "mobileLeftColumn": 26,
+  "mobileRightColumn": 42,
+  "mobileTopRow": 53,
+  "needsErrorInfo": false,
+  "onClick": "{{navigateTo('login page', {}, 'SAME_WINDOW');}}",
+  "parentColumnSpace": 7.234375,
+  "parentId": "1emb8sh050",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 44,
+  "text": "Quit",
+  "topRow": 53,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "fq50m81uvn",
+  "widgetName": "Button12"
+}

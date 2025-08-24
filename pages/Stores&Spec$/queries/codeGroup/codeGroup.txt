@@ -1,0 +1,1 @@
+SELECT * FROM code where group_type='G';

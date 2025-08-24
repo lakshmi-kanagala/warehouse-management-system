@@ -1,0 +1,47 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 66,
+  "defaultCheckedState": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "2e23s46zh3",
+  "label": "Print Warning Message",
+  "labelPosition": "Left",
+  "leftColumn": 30,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 68,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 42,
+  "mobileTopRow": 64,
+  "needsErrorInfo": false,
+  "originalBottomRow": 66,
+  "originalTopRow": 62,
+  "parentColumnSpace": 19.109375,
+  "parentId": "i8d63mg28c",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 42,
+  "topRow": 62,
+  "type": "CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "xml1cnsstm",
+  "widgetName": "storePrintWarnCheckbox"
+}

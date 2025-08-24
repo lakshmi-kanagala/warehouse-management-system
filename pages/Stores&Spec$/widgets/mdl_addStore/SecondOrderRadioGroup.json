@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "left",
+  "animateLoading": true,
+  "bottomRow": 77,
+  "boxShadow": "none",
+  "defaultOptionValue": "Y",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isDisabled": false,
+  "isInline": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "peww7hj8n7",
+  "label": "Second Order Option for Web Ordering",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 30,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 77,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 50,
+  "mobileTopRow": 71,
+  "needsErrorInfo": false,
+  "options": [
+    {
+      "label": "Not Available",
+      "value": "Y"
+    },
+    {
+      "label": "Regular",
+      "value": "N"
+    },
+    {
+      "label": "Occasional",
+      "value": "OPTION1"
+    }
+  ],
+  "originalBottomRow": 77,
+  "originalTopRow": 71,
+  "parentColumnSpace": 19.109375,
+  "parentId": "i8d63mg28c",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 50,
+  "topRow": 71,
+  "type": "RADIO_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "vz2ayy7624",
+  "widgetName": "SecondOrderRadioGroup"
+}

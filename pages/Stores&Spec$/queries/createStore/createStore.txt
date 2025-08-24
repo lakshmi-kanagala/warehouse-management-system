@@ -1,0 +1,21 @@
+{
+"storeName": "{{storeNameInput.text}}",
+"storeCode": "{{storeCodeInput.text}}",
+"address1": "{{storeAddressOneInput.text}}",
+"address2": "{{storeAddressTwoInput.text}}",
+"town": "{{storeTownInput.text}}",
+"state": "{{storeStateInput.text}}",
+"postcode": "{{storePostCodeInput.text}}",
+"fax": "{{storeFaxInput.text}}",
+"mobile":"{{storeMobileInput.text}}",
+"contact": "{{storeContactInput.text}}",
+"discount": "{{storeDiscountInput.text}}",
+"warnPage":"{{storePrintWarnCheckbox.isChecked}}",
+"abn": "{{storeAbnInput.text}}",
+"active": true,
+"groupId": 2,
+"email": "{{storeEmailInput.text}}",
+"externalRef": 15,
+"zoneId": 5,
+"m3Code": "{{storeM3CodeInput.text}}"
+}

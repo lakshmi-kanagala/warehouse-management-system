@@ -1,0 +1,8 @@
+INSERT INTO location
+  (type, person, address1)
+VALUES
+  (
+    'ADDRESS',
+    {{this.params.personId}},
+    {{ storePostCodeInput.text || storeFaxInput.text }}
+  );

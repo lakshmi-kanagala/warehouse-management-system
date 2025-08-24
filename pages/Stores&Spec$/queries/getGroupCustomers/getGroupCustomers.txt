@@ -1,0 +1,1 @@
+SELECT co_name,active FROM customer where group_id= {{ tblCodes.selectedRow.id }};
