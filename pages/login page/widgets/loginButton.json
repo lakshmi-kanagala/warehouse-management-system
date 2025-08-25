@@ -32,6 +32,8 @@
   "mobileTopRow": 28,
   "needsErrorInfo": false,
   "onClick": "{{JSObject1.loginButtononClick();}}",
+  "originalBottomRow": 31,
+  "originalTopRow": 27,
   "parentColumnSpace": 20.125,
   "parentId": "0",
   "parentRowSpace": 10,
