@@ -1,0 +1,45 @@
+package com.drakes.itsfresh.model;
+
+import java.sql.Blob;
+import java.sql.Date;
+import java.sql.Timestamp;
+import java.util.Currency;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Setter
+@Getter
+@ToString
+@Table
+@Entity
+public class InvHead {
+	@Id
+    private Integer invNo;
+    private Date date;
+    @ManyToOne
+    @JoinColumn(name = "cust_id")
+    private Customer custId;
+    private Integer stateNo;
+    private Boolean paid;
+    private Currency total;
+    private Currency gstInc;
+    private Currency gst;
+    private String type;
+    private Timestamp amended;
+    private Integer orderRunId;
+    private Blob notes;
+    private Integer status;
+    private Integer pickList;
+    private Timestamp updated;
+    private Integer deptId;
+    private String premiumEtc;
+    private Date workingDate;
+    
+}

@@ -1,0 +1,21 @@
+package com.drakes.itsfresh.model;
+
+import jakarta.persistence.EmbeddedId;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+@Entity
+@Table(uniqueConstraints = @UniqueConstraint(columnNames = {"store_id", "prod_no"}))
+public class StoreLine {
+	@EmbeddedId
+	private StoreLineKey storeLineKey;
+	private Integer selectOrBlock;
+}
+

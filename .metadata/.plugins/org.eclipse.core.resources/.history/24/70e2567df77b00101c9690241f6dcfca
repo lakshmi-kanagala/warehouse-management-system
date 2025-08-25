@@ -1,0 +1,10 @@
+package com.drakes.itsfresh.model;
+
+import jakarta.persistence.Embeddable;
+
+@Embeddable
+public class CustomerKey {
+
+	private Integer Id;
+	private String custCode;
+}

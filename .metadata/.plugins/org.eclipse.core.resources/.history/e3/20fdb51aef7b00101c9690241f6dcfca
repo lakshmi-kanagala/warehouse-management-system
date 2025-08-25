@@ -1,0 +1,33 @@
+package com.drakes.itsfresh.model;
+
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+public class Customer {
+	   
+		  @Id
+		    @GeneratedValue(strategy = GenerationType.IDENTITY)
+		    private Integer id;
+		    private String storeName;
+		    private String storeCode;
+		    private String address1;
+		    private String address2;
+		    private String town;
+		    private String state;
+		    private String postcode;
+		    private String fax;
+		    private String mobile;
+		    private String contact; 
+		    private Double discount;
+		    private Boolean warnPage;
+		    private String ABN;
+		    private Boolean active;
+		   // private int BusinessId;
+		    private Integer groupId;
+		    private String email;
+		    private String externalRef;
+		    //private String salesRepId;
+		    private Integer zoneId;
+		    private String M3Code;
+}

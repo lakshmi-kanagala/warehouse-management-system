@@ -1,0 +1,39 @@
+package com.drakes.itsfresh.model;
+
+import java.sql.Blob;
+import java.sql.Date;
+import java.sql.Timestamp;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+@Entity
+@Table
+public class OrderSupplier {
+	@Id
+	private Integer runId;
+	@ManyToOne
+	@JoinColumn(name="supplier_id", referencedColumnName = "id")
+	private Supplier supplierId;
+	private Blob note;
+	private Integer orderNumber;
+	private Blob reDelivery;
+	private Integer status;
+	private Timestamp received;
+	@ManyToOne
+	@JoinColumn(name="supplier_invoice_id", referencedColumnName = "id")
+	private SupInvoice supplierInvoiceId;
+	private Date date;
+	private String type;
+	private Boolean showCost;
+	private Date deliveryRequired;
+}

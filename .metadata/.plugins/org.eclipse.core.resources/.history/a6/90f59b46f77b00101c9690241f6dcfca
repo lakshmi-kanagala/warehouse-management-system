@@ -1,0 +1,5 @@
+package com.drakes.itsfresh.model;
+
+public class CustomerKey {
+
+}

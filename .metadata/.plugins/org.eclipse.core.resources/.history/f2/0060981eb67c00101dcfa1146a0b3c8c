@@ -1,0 +1,27 @@
+package com.drakes.itsfresh.model;
+
+import java.util.Objects;
+
+import jakarta.persistence.Embeddable;
+import lombok.NoArgsConstructor;
+
+@Embeddable
+@NoArgsConstructor
+public class StoreLineKey {
+	private Customer storeId;
+	private Produce prodNo;
+	
+	 @Override
+	    public boolean equals(Object o) {
+	        if (this == o) return true;
+	        if (!(o instanceof StoreLineKey)) return false;
+	        StoreLineKey that = (StoreLineKey) o;
+	        return Objects.equals(storeId, that.storeId) &&
+	               Objects.equals(prodNo, that.prodNo);
+	    }
+
+	    @Override
+	    public int hashCode() {
+	        return Objects.hash(storeId, prodNo);
+	    }
+}

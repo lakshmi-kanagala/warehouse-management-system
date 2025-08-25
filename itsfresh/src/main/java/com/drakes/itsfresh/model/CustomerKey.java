@@ -1,0 +1,30 @@
+package com.drakes.itsfresh.model;
+
+import java.util.Objects;
+
+import jakarta.persistence.Embeddable;
+import lombok.NoArgsConstructor;
+
+@Embeddable
+@NoArgsConstructor
+public class CustomerKey {
+
+	//@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	private String custCode;
+	
+	// equals() and hashCode() are required
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof CustomerKey)) return false;
+        CustomerKey that = (CustomerKey) o;
+        return Objects.equals(id, that.id) &&
+               Objects.equals(custCode, that.custCode);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, custCode);
+    }
+}

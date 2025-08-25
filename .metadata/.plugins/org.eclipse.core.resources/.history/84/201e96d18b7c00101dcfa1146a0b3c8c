@@ -1,0 +1,29 @@
+package com.drakes.itsfresh.model;
+
+import java.io.Serializable;
+import java.util.Objects;
+//@Embeddable
+public class CodeKey implements Serializable {
+    private Integer id;
+    private String groupType;
+    private String code;
+
+    // Must have default constructor
+    public CodeKey() {}
+
+    // equals() and hashCode() are required
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof CodeKey)) return false;
+        CodeKey that = (CodeKey) o;
+        return Objects.equals(id, that.id) &&
+               Objects.equals(groupType, that.groupType) &&
+               Objects.equals(code, that.code);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, groupType, code);
+    }
+}

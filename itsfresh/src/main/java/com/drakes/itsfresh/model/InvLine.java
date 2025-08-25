@@ -1,0 +1,38 @@
+package com.drakes.itsfresh.model;
+
+import java.util.Currency;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Setter
+@Getter
+@ToString
+@Table
+@Entity
+public class InvLine {
+	@Id
+	private Integer id;
+	 @ManyToOne
+	 @JoinColumn(name ="inv_no")
+    private InvHead invNo;
+    @ManyToOne
+    @JoinColumn(name ="prod_no")
+    private Produce prodNo;
+    private Integer Quantity;
+    private Currency cost;
+    private Currency rrp;
+    private String special;
+    private Float noUnits;
+    private Float gstRate;
+    private Integer lineOrder;
+    private Integer directBuy;
+    private String exclusiveEtc;
+
+}

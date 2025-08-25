@@ -1,0 +1,53 @@
+package com.drakes.itsfresh.model;
+
+import java.util.Currency;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+@Entity
+@Table
+public class Produce {
+	@Id
+	private Integer prodNo;
+	private Integer sharedLine;
+	private String status;
+	private Integer dispOrder;
+	private String descrip;
+	private Float noUnits;
+	private Float unitWeight;
+	private Integer quantity;
+	private Currency buyInCost;
+	private Integer sectionId;
+	private Integer packingOrder;
+	private Boolean incGst;
+	private Long plu;
+	private Integer headingId;
+	private String code;
+	private String lineType;
+	private Integer containerId;
+	private Integer orderSup1;
+	private Integer orderPercent1;
+	private Integer orderSup2;
+	private Integer orderPercent2;
+	private Integer orderSup3;
+	private Integer orderPercent3;
+	@JoinColumn(name="direct_buy", referencedColumnName = "id")
+	private Supplier directBuy;
+	private Currency directBuyCost;
+	private Boolean noGrowerOrder;
+	private Long bardCode;
+	private Integer premiumOrderSup1;
+	private Integer premiumOrderSup2;
+	private Integer deptId;
+	private Integer orderedFromLine;
+	private String externalRef;
+}

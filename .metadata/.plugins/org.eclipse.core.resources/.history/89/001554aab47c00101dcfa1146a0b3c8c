@@ -1,0 +1,15 @@
+package com.drakes.itsfresh.model;
+
+import jakarta.persistence.Embeddable;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+
+@Embeddable
+public class StoreLineKey {
+	@ManyToOne
+	@JoinColumn(name="store_id", referencedColumnName = "id")
+	private Customer storeId;
+	@ManyToOne
+	@JoinColumn(name="prod_no", referencedColumnName = "prod_no")
+	private Produce prodNo;
+}
